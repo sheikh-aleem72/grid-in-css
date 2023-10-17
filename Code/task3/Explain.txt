@@ -1,0 +1,18 @@
+Use of grid-auto-row and grid-auto-column:
+
+grid-auto-row and grid-auto-column are properties used in CSS Grid Layout to control the sizing and placement of grid items when they don't explicitly specify their own row and column positions.
+
+grid-auto-row:
+
+This property is used to define the size and behavior of rows in a grid that are created implicitly when grid items are placed and there are no explicitly defined rows to accommodate them.
+You can set the value of grid-auto-row to control the sizing of these auto-generated rows. Common values include:
+auto: This is the default value, and it allows the rows to size themselves based on their content.
+A specific size (e.g., 1fr, 100px, 2em): You can set a fixed size for these rows.
+minmax(min, max): You can define a range for the row sizes. For example, grid-auto-row: minmax(100px, auto) will make the row at least 100px tall but grow as needed to fit its content.
+
+
+grid-auto-column:
+
+Similar to grid-auto-row, grid-auto-column is used to control the sizing and behavior of columns in a grid when grid items don't explicitly specify their column positions.
+It allows you to set the size and behavior of implicitly generated columns.
+The values and behavior of grid-auto-column are similar to those of grid-auto-row. You can use values like auto, specific sizes, or minmax to control the width of these auto-generated columns
